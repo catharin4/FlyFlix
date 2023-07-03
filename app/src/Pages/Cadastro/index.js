@@ -1,7 +1,9 @@
+import FormularioCadastro from "../../Components/Navbar/FormularioCadastro/index.jss";
+
 function Cadastro() {
   return (
     <div className="Cadastro">
-      <p>Essa é a página de cadastro.</p>
+      <FormularioCadastro/>
     </div>
   );
 }
