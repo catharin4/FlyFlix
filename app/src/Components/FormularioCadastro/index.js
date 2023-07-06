@@ -1,23 +1,15 @@
-import CampoTexto from "../CampoTexto/index.jss"
+import CampoTexto from "../CampoTexto/index.js"
 
-const FormularioCadastro = () =>{
+const FormularioCadastro = (nome, cidade, estado, email, senha) => {
     return(
         <section className="Formulario">
             <form>
-                <h2>Faça seu cadastro</h2>
                 <CampoTexto
                     obrigatorio={true}
                     label="Nome"
                     placeholder="Digite aqui seu nome"
                     valor={nome}
                 />
-                <div className="Data">
-                    <label>Data de nascimento</label>
-                    <input
-                        type="date"
-                        label="Data"
-                    />
-                </div>
                 <CampoTexto
                     obrigatorio={true}
                     label="Cidade"
@@ -30,7 +22,18 @@ const FormularioCadastro = () =>{
                     placeholder="Digite o seu estado aqui"
                     valor={estado}
                 />
-                
+                <CampoTexto
+                    obrigatorio={true}
+                    label="Email"
+                    placeholder="Digite o seu email aqui"
+                    valor={email}
+                />
+                <CampoTexto
+                    obrigatorio={true}
+                    label="Senha"
+                    placeholder="Digite a sua senha aqui"
+                    valor={senha}
+                />
             </form>
         </section>    
         
