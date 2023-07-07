@@ -1,8 +1,14 @@
 import logo from "../../logo.svg"
-import YoutubeCarousel from "../../Components/YoutubeCarousel/YoutubeCarousel"
+import YoutubeCarouselFront from "../../Components/YoutubeCarousel/YoutubeCarouselFront"
+import YoutubeCarouselBack from "../../Components/YoutubeCarousel/YoutubeCarouselBack"
 
 function Home() {
-  return <YoutubeCarousel />
+  return (
+    <>
+      <YoutubeCarouselFront />
+      <YoutubeCarouselBack />
+    </>
+  )
 }
 
 export default Home

@@ -4,7 +4,7 @@ import Slider from "react-slick"
 import YouTube from "react-youtube"
 import "./YoutubeCarousel.css"
 
-const YouTubeCarousel = () => {
+const YoutubeCarouselFront = () => {
   const [videos, setVideos] = useState([])
   const [selectedVideo, setSelectedVideo] = useState(null)
 
@@ -12,7 +12,7 @@ const YouTubeCarousel = () => {
     const fetchVideos = async () => {
       try {
         const response = await axios.get(
-          `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&id=LqXqBgIUbJg&id=30nlBGjPRYM&id=y4ltLH9iK8E&id=Osn7jycnqkk&id=b_nygdZaN3Q&key=AIzaSyCaDq_b9-jB5qr_t2QFTFM-1ifRqV88kyQ`
+          `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&id=LqXqBgIUbJg&id=30nlBGjPRYM&id=y4ltLH9iK8E&id=Osn7jycnqkk&id=b_nygdZaN3Q&key=[API_KEY]`
         )
         setVideos(response.data.items)
       } catch (error) {
@@ -41,13 +41,14 @@ const YouTubeCarousel = () => {
 
   return (
     <div>
+      <p className='slide-title'>Conteúdos de Frontend</p>
       <Slider {...settings}>
         {videos.map((video) => (
           <div className='carousel-slide' key={video.id.videoId}>
             <h3>{video.snippet.title}</h3>
             <img
               onClick={() => handleVideoClick(video)}
-              src={video.snippet.thumbnails.default.url}
+              src={video.snippet.thumbnails.standard.url}
               alt={video.snippet.title}
               loading='carregando...'
             />
@@ -66,4 +67,4 @@ const YouTubeCarousel = () => {
   )
 }
 
-export default YouTubeCarousel
+export default YoutubeCarouselFront

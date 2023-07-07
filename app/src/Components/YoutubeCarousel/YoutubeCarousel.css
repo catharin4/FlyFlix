@@ -1,4 +1,14 @@
 /* YouTubeCarousel.css */
+* {
+  font-family: "Roboto";
+}
+.slide-title {
+  color: #333;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+}
 
 .carousel-container {
   max-width: 800px; /* Adjust the width as needed */
@@ -10,7 +20,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 250px;
+  height: 320px;
   width: 200px;
   background-color: #f1f1f1;
   padding: 0 10px;
@@ -18,20 +28,26 @@
 }
 
 .carousel-slide img {
-  width: 150px;
+  width: 250px;
   max-height: 100%;
   display: block;
   margin: 0 auto;
   cursor: pointer;
+  border-radius: 7px;
+}
+
+.carousel-slide img:hover {
+  transform: translate(0px, -8px);
 }
 
 .carousel-slide h3 {
   color: #333;
+  font-weight: 400;
   height: 80px;
   width: 100%;
   text-align: center;
   font-size: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .close-button {
@@ -46,4 +62,11 @@
 
 .close-button:hover {
   background-color: #ccc;
+}
+
+.video-player {
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  width: 640px;
 }
