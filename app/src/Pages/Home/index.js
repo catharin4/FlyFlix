@@ -1,16 +1,8 @@
-import logo from '../../logo.svg'
+import logo from "../../logo.svg"
+import YoutubeCarousel from "../../Components/YoutubeCarousel/YoutubeCarousel"
 
 function Home() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Essa é a home
-        </p>
-      </header>
-    </div>
-  );
+  return <YoutubeCarousel />
 }
 
-export default Home;
+export default Home
