@@ -2,7 +2,7 @@ import CampoTexto from "../CampoTexto/index.js"
 
 const FormularioCadastro = (nome, cidade, estado, email, senha) => {
     return(
-        <section className="Formulario">
+        <section className="formulario">
             <form>
                 <CampoTexto
                     obrigatorio={true}

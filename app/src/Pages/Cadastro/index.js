@@ -1,8 +1,9 @@
 import FormularioCadastro from "../../Components/FormularioCadastro";
+import './Cadastro.css'
 
 function Cadastro() {
   return (
-    <div className="Cadastro">
+    <div className="cadastro">
       <h2>Faça seu cadastro aqui</h2>
       <FormularioCadastro/>
     </div>

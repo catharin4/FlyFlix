@@ -3,7 +3,7 @@
 }
 
 .campo-texto label {
-    display: block;
+    display: inline-block;
     margin-bottom: 8px;
     font-size: 24px;
 }
