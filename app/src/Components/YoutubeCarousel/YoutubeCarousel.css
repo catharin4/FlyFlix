@@ -4,7 +4,7 @@
 }
 .slide-title {
   color: #333;
-  margin-top: 50px;
+  margin-top: 70px;
   text-align: center;
   font-weight: bold;
   font-size: larger;
@@ -25,6 +25,7 @@
   background-color: #f1f1f1;
   padding: 0 10px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .carousel-slide img {
@@ -32,7 +33,6 @@
   max-height: 100%;
   display: block;
   margin: 0 auto;
-  cursor: pointer;
   border-radius: 7px;
 }
 
