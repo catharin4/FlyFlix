@@ -1,12 +1,12 @@
 import FormularioCadastro from "../../Components/FormularioCadastro";
-import './Cadastro.css'
+import Footer from "../../Components/Footer"
 
 function Cadastro() {
   return (
-    <div className="cadastro">
-      <h2>Faça seu cadastro aqui</h2>
+    <>
       <FormularioCadastro/>
-    </div>
+      <Footer/>
+    </>
   );
 }
 

@@ -1,13 +1,8 @@
-.titulo {
-    text-align: center;
-}
-
-.formulario {
+form{
     display: flex;
-    flex-direction:column;
-    flex-wrap: nowrap;
+    flex-direction: column;
     gap: 1rem;
-    width: 700px;
+    width: 500px;
     margin: 0 auto;
 }
 
@@ -18,8 +13,7 @@ label{
 
 input{
     width: 100%;
-    padding: 12 20px;
-    box-sizing: border-box;
+    padding: 10px;
     border: 1px solid #CCC;
     border-radius: 5px;
     font-size: 1.1rem;

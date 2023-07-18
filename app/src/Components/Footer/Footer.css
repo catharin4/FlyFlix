@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  margin-top: 50px;
   padding: 32px;
   background: linear-gradient(#7bb436d0, #f9ba0dc3, #45b4bce6);
 }

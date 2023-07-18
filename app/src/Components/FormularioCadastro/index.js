@@ -1,4 +1,8 @@
+import React from 'react'
 import { useFormik, Field, FormikProvider } from 'formik'
+import Botao from '../Botao/Botao'
+import { TextField, Container } from '@material-ui/core'
+import './FormularioCadastro.css'
 
 const FormularioCadastro = () => {
   const validate = (values) => {
@@ -46,6 +50,7 @@ const FormularioCadastro = () => {
   return (
     <Container fixed>
       <FormikProvider value={formik}>
+        <h2 className='titulo'>Cadastro</h2>
         <form className='formulario' onSubmit={formik.handleSubmit}>
           <label htmlFor="nome">Nome:</label>
           <TextField
@@ -153,7 +158,7 @@ const FormularioCadastro = () => {
             value={formik.values.confsenha}
           />
           {formik.touched.confirmar && Boolean(formik.errors.confirmar)}
-          <Button color="primary" variant="contained" fullWidth type="submit">Enviar</Button>
+          <Botao/>
         </form>
       </FormikProvider>
     </Container>
