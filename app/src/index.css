@@ -60,6 +60,13 @@ a{
   font-weight: bold;
 }
 /* unvisited link */
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+
 a:link {
   color: rgb(208, 219, 7);
 }

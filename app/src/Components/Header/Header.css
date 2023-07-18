@@ -1,3 +1,10 @@
+
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
 #banner_logo {
   width: max-content;
   margin-top: 65px;

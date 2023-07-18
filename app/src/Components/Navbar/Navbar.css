@@ -1,3 +1,10 @@
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+
 .navigation {
   height: 60px;
   width: 100%;
