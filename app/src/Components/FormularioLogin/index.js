@@ -18,8 +18,9 @@ const FormularioLogin = () => {
             return;
         }
 
-        // Se todos os campos estivrem corretamente preenchidos, envie o form
+        // Se todos os campos estiverem corretamente preenchidos, envie o form
         form.submit();
+        location.href = "carrossel.html";
     });
 
     // Função que valida e-mail
