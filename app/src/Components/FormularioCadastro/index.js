@@ -1,46 +1,33 @@
-import './FormularioCadastro.css'
 import { useFormik, Field, FormikProvider } from 'formik'
-import * as yup from 'yup'
-import Button from '@material-ui/core/Button'
-import { TextField, Container } from '@material-ui/core'
-
 
 const FormularioCadastro = () => {
-  const validate = values => {
+  const validate = (values) => {
     const errors = {}
     if (!values.nome) {
-      errors.nome = 'Obrigatório'
+      errors.nome = "Obrigatório"
     } else if (values.nome.length < 1) {
-      errors.nome = 'É necessário preencher esse campo'
+      errors.nome = "É necessário preencher esse campo"
     }
     if (!values.cidade) {
-      errors.cidade = 'Obrigatório'
+      errors.cidade = "Obrigatório"
     } else if (values.cidade.length < 1) {
-      errors.cidade = 'É necessário preencher esse campo'
+      errors.cidade = "É necessário preencher esse campo"
     }
     if (!values.estado) {
-      errors.estado = 'Obrigatório'
+      errors.estado = "Obrigatório"
     } else if (values.estado.length < 1) {
-      errors.estado = 'É necessário preencher esse campo'
+      errors.estado = "É necessário preencher esse campo"
     }
     if (!values.email) {
-      errors.email = 'Obrigatório'
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-      errors.email = 'Email inválido'
+      errors.email = "Obrigatório"
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
+    ) {
+      errors.email = "Email inválido"
     }
-    yup.object().shape({
-      pass: yup
-        .string()
-        .min(8, 'A senha deve ter no minimo 8 caracteres')
-        .matches(/[0-9]/, 'A senha precisa ter um número')
-        .matches(/[a-z]/, 'A senha precisa ter uma letra minuscula')
-        .matches(/[A-Z]/, 'A senha precisa ter uma letra maiúscula'),
-      confirm: yup
-        .string()
-        .oneOf([yup.ref('senha')], 'As senhas devem ser iguais'),
-    });
+  
     return errors
-  };
+  }
 
   const formik = useFormik({
     initialValues: {
