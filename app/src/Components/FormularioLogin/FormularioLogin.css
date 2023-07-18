@@ -2,26 +2,36 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
-  }
-  
+    font-family: "Roboto";
+}
 
-form{
+.titulo {
+    color: #333;
+    margin-top: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+form {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     gap: 1rem;
     width: 500px;
     margin: 0 auto;
 }
 
-label{
+label {
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-input{
+input {
     width: 100%;
     padding: 10px;
     border: 1px solid #CCC;
     border-radius: 5px;
     font-size: 1.1rem;
 }
+
