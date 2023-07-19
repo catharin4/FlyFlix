@@ -12,7 +12,7 @@ const YoutubeCarouselFront = () => {
     const fetchVideos = async () => {
       try {
         const response = await axios.get(
-          `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&id=LqXqBgIUbJg&id=30nlBGjPRYM&id=y4ltLH9iK8E&id=Osn7jycnqkk&id=b_nygdZaN3Q&key=[API_KEY]`
+          `https://youtube.googleapis.com/youtube/v3/videos?part=snippet&id=LqXqBgIUbJg&id=30nlBGjPRYM&id=y4ltLH9iK8E&id=Osn7jycnqkk&id=b_nygdZaN3Q&key=AIzaSyC9X-69tNsUrrkPw3LdhkVeppNC8aaXXc0`
         )
         setVideos(response.data.items)
       } catch (error) {
