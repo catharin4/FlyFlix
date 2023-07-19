@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.boasvindas {
+    background-color: #F9BB0D;
+    padding: 30px;
+    padding-bottom: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textoboasvindas {
+    position: absolute;
+    text-align: center;
+    padding-left: 300px;
+    font-size: 20px;
+}
+
+.video1 {
+    position: relative;
+    height: 200px;
+    top: 40px;
+    padding-left: 100px;
+}

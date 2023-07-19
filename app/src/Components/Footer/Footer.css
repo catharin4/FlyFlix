@@ -7,14 +7,22 @@
   margin-top: 50px;
   padding: 32px;
   background: linear-gradient(#7bb436d0, #f9ba0dc3, #45b4bce6);
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
 }
+
 .rodape-imagem {
   height: 100px;
 }
+
 a {
   color: #1c2c07;
   font-weight: bold;
 }
+
 /* unvisited link */
 a:link {
   color: rgb(18, 6, 99);

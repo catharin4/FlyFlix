@@ -6,8 +6,7 @@ const Header = () => {
     <div className='banner__content'>
       <img src={flyNOME} alt='FlyFlix' />
       <p className='text-banner'>
-        Mais que um site para ex-alunas e para as novas alunas: um guia para
-        tirar dúvidas e aprender a partir do básico.
+        Mais que um site para ex-alunas e para as novas alunas: um guia para tirar dúvidas e aprender a partir do básico.
       </p>
     </div>
   )
