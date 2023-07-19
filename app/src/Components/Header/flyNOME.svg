@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="300pt" height="200pt" viewBox="0 0 300 207"
+ width="400" height="400" viewBox="0 0 300 207"
  preserveAspectRatio="xMidYMid meet">
 
 
@@ -11,7 +11,6 @@
     <stop stop-color="hsl(184, 47%, 50%)" offset="5%"/>
     <stop stop-color="hsl(44, 95%, 51%)" offset="95%"/>
   </linearGradient>
-
 </defs>
 <g transform="translate(0.000000,207.000000) scale(0.100000,-0.100000)"
 fill="url(#grad1)" stroke="rgb(69 181 188)" stroke-width="3" >
