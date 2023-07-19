@@ -1,5 +1,3 @@
-
-
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -11,7 +9,7 @@
   background: linear-gradient(#7bb436d0, #f9ba0dc3, #45b4bce6);
 }
 .rodape-imagem {
-  height: 48px;
+  height: 100px;
 }
 a {
   color: #1c2c07;
@@ -49,6 +47,4 @@ li {
   display: flex;
   gap: 32px;
   margin-left: 15rem;
-  
 }
-

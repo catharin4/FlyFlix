@@ -6,10 +6,11 @@
   text-align: center;
   font-weight: bold;
   font-size: larger;
+  margin-bottom: 3em;
 }
 
 .carousel-container {
-  max-width: 800px; /* Adjust the width as needed */
+  max-width: 100%; /* Adjust the width as needed */
   margin: 0 auto;
 }
 
@@ -18,16 +19,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 320px;
-  width: 200px;
+  max-height: 500px;
   background-color: #f1f1f1;
+  flex: 0 0 100%;
   padding: 0 10px;
   box-sizing: border-box;
   cursor: pointer;
 }
 
 .carousel-slide img {
-  width: 250px;
+  max-width: 100%;
   max-height: 100%;
   display: block;
   margin: 0 auto;
@@ -40,12 +41,17 @@
 
 .carousel-slide h3 {
   color: #333;
+  height: 5em;
   font-weight: 400;
-  height: 80px;
-  width: 100%;
+  font-size: 16px;
   text-align: center;
   font-size: 16px;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit the text to two lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .close-button {
@@ -67,4 +73,16 @@
   margin: auto;
   justify-content: center;
   width: 640px;
+}
+
+@media screen and (min-width: 768px) {
+  .carousel-slide {
+    flex: 0 0 50%; /* Show two slides per row on larger screens */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .carousel-slide {
+    flex: 0 0 33.33%; /* Show three slides per row on even larger screens */
+  }
 }
