@@ -7,21 +7,18 @@ const Footer = () => {
       <div className='flex-container'>
         <img className='rodape-imagem' src={flyNOME} alt='FlyFlix' />
         <div>
-          <a href='/cadastro' target='_self'>
-            <strong>Login</strong>{" "}
-          </a>
+          <ul>
+            <li>
+              <a href="/" target="_self" type="none">Inicio</a>
+            </li>
+            <li>
+              <a href="/login" target="_self" type="none">Login</a>
+            </li>
+            <li>
+              <a href="/cadastro" target="_self" type="none">Cadastro</a>
+            </li>
+          </ul>
         </div>
-        <div>
-          <a href='/cadastro' target='_self'>
-            Cadastro
-          </a>
-        </div>
-      </div>
-      <div>
-        <p class='rodape-text'>
-          {" "}
-          Para novas alunas, um guia para aprender a partir do básico.
-        </p>
       </div>
     </>
   )
