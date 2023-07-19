@@ -1,21 +1,21 @@
-
 * {
   text-decoration: none;
   margin: 0;
   padding: 0;
 }
 
-#banner_logo {
-  width: max-content;
-  margin-top: 65px;
-  height: 20dvh;
-  padding-left: 40%;
-  margin-right: 5px;
-}
 .banner__content {
-  display: block;
-  word-wrap: initial;
   background: #ecf7f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_img {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 300px;
 }
 
 .text-banner {
@@ -24,10 +24,21 @@
   font-weight: 400;
   font-weight: bold;
   color: #335805;
-  margin-left: 15rem;
 }
 
 .texto-principal {
   text-align: center;
   padding: 79px;
+}
+
+p {
+  margin: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  text-align: center;
+  color: #335805;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  font-weight: bold;
 }
