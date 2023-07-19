@@ -1,5 +1,6 @@
 import React from "react"
 import flyNOME from "../Header/flyNOME.svg"
+import "./Footer.css"
 
 const Footer = () => {
   return (

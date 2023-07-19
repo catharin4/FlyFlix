@@ -1,22 +1,17 @@
-* {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-}
+
 
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   margin-top: 50px;
   padding: 32px;
   background: linear-gradient(#7bb436d0, #f9ba0dc3, #45b4bce6);
 }
 .rodape-imagem {
   height: 48px;
-  margin-right: 30px;
-  margin-left: 35rem;
 }
 a {
   color: #1c2c07;
@@ -42,6 +37,11 @@ a:active {
   color: blue;
 }
 
+li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
 .rodape-text {
   font-family: "Roboto", sans-serif;
   color: #1d3005;
@@ -49,4 +49,6 @@ a:active {
   display: flex;
   gap: 32px;
   margin-left: 15rem;
+  
 }
+
