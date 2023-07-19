@@ -35,19 +35,7 @@
 }
 
 
-.flex-container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    padding: 32px;
-    background: linear-gradient(#7bb436d0,#f9ba0dc3, #45b4bce6 );
-}
-.rodape-imagem{
-    height:48px;
-    margin-right: 30px;
-    margin-left: 35rem; 
-}
+
 a{
     color:#1c2c07;
     font-weight: bold;
